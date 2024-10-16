@@ -1,0 +1,155 @@
+
+.roadmap-container {
+    color: #ffffff;
+    background-color: #071719;
+    font-family: 'Space Grotesk', Arial, sans-serif;
+
+    min-height: 100vh;
+  }
+  
+  .roadmap-heading {
+    color: #ffffff;
+    font-family: 'Space Grotesk', Arial, sans-serif;
+
+    font-family: "roboto";
+    text-align: center;
+
+  }
+  
+  .roadmap-info-1, .roadmap-info-2, .roadmap-info-3 {
+    font-family: 'Roboto';
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .phase-1-info, .phase-3-info {
+    margin-left: 10%;
+    padding-top: 50px;
+  }
+  .phase-2-info{
+    margin-left: 0;
+    margin-right: 20%;
+    padding-top: 30px;
+  }
+
+  .phase-button {
+    border-radius: 5px;
+    padding: 8px 18px;
+  }
+  
+  .phase-1 {
+    background-color: #F7F7F7;
+    color: #333333;
+    width: 90px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: inset 0 4px 8px #333333;
+  }
+  
+  .phase-name-1 {
+    font-weight: 500;
+    font-size: 35px;
+    margin-top:  20px;
+    margin-bottom: 20px;
+  }
+  
+  .captions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tick, .tick-1 {
+    border: 1.25px solid #A3F0FE;
+    color: #A3F0FE;
+    border-radius: 20px;
+    margin-right: 15px;
+  }
+  
+  .tick-info {
+    font-size: 15px;
+    font-family: 'Open Sans';
+  }
+  
+  .phase-image {
+    width: 650px;
+    height: 450px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .roadmap-info-1, .roadmap-info-2, .roadmap-info-3 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .phase-image {
+      width: 350px;
+      height: 300px;
+      margin-top: 20px;
+    }
+  
+    .phase-1 {
+      width: 70px;
+      font-size: 12px;
+    }
+  
+    .phase-name-1 {
+      font-size: 17px;
+    }
+  
+    .tick-info {
+      font-size: 10px;
+    }
+  }
+  
+  body {
+    background-color: #0a192f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .roadmap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .phase {
+    margin-bottom: 40px;
+ 
+  }
+  
+  .phase.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h1, h2 {
+    color: #64ffda;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 30px;
+  }
+  
+  
+
+  .roadmap-item {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .roadmap-item::before {
+    content: "✓";
+    color: #A3F0FE;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }

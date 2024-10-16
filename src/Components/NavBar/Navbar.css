@@ -1,0 +1,132 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    
+    }
+    
+    .logo-container {
+    font-size: 24px;
+    color: #ffffff;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2px;
+        padding: 10px;
+    }
+    
+    .segment {
+        background-color: #008B8B;
+    }
+    
+    .segment:nth-child(1) {
+        border-radius: 0 100% 0 0;
+    }
+    .segment:nth-child(8) {
+         border-radius: 0 0 100% 0;
+    }
+    .segment {
+          background-color: #008B8B;
+    }
+    
+    .segment:nth-child(3) {
+        border-radius: 0 100% 0 0;
+          background-color: #00FFFF;
+    }
+    
+    .segment:nth-child(7) {
+        border-radius: 0 0 0 100%;
+          background-color: #00FFFF;
+    }
+    
+    .segment:nth-child(9) {
+        border-radius: 0 0  0 100% ;
+          background-color: #00FFFF;
+          
+    }
+    
+    .segment:nth-child(2),
+    .segment:nth-child(4){
+          background-color: #00FFFF;
+          
+    }
+    .segment:nth-child(6){
+          background-color: #00FFFF;
+      
+    }
+    
+    
+    .segment:nth-child(5) {
+        background-color: transparent;
+    }
+    
+    .nav-links {
+      position: fixed; /* Make the nav fixed at the top */
+      top: 0; /* Align it to the top */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Center the content properly */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 44px;
+      list-style-type: none;
+      height: 64px;
+      width: 603px;
+      border-radius: 48px;
+      background: rgba(12, 43, 47, 0.7); /* Semi-transparent background */
+      backdrop-filter: blur(10px); /* Apply blur effect */
+      padding-left: 0px;
+      z-index: 9; /* Ensure it stays on top of other elements */
+    }
+    
+    .nav-links a {
+      color: rgba(176, 250, 255, 0.7);
+      text-decoration: none;
+      font-family: var(--fontfamilyFont1);
+      font-size: var(--fontsize16);
+      font-weight: 500;
+      line-height: var(--itemspacingm);
+      letter-spacing: var(--letterspacing-016);
+      text-align: left;
+    }
+    
+    .nav-buttons {
+    display: flex;
+    gap: 12px;
+    }
+    
+    .login-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+    
+    .whitepaper-btn {
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: #CDFCFF;
+    color: black;
+    border: none;
+    cursor: pointer;
+    box-shadow: 
+    0px 0px 1px 1px #4CDDFD inset,
+    0px 1px 1px 0px #4CDDFD inset,
+    0px 0px 4px 2px #FFFFFF1F inset,
+    0px -8px 16px -4px #37C5E599 inset,
+    0px 6px 20px 0px #37C5E51F,
+    0px 4px 12px 0px #37C5E51F,
+    0px 4px 6px 0px #37C5E51F,
+    0px 1px 4px 0px #37C5E51F;
+    }
